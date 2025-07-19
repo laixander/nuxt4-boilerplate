@@ -1,5 +1,5 @@
 <template>
-    <div class="h-16 shrink-0 flex items-center gap-1.5 px-4 lg:border-b lg:border-default">
+    <div class="h-16 shrink-0 flex items-center gap-1.5 px-2.5 lg:border-b lg:border-default">
         <UButton 
             icon="i-lucide-x" 
             variant="ghost" 
@@ -10,9 +10,10 @@
         />
         <UButton
             :avatar="{
-                src: 'https://github.com/nuxt.png'
+                src: 'img/logo.png',
+                size: 'md'
             }"
-            :label="collapsed ? undefined : 'Application Name'"
+            :label="collapsed ? undefined : app"
             color="neutral"
             variant="ghost"
             :class="collapsed ? '' : 'w-full'"
@@ -62,6 +63,7 @@
 <script setup lang="ts">
 import UserMenu from '~/components/Core/UserMenu.vue'
 defineProps<{
+    app: string
     collapsed: boolean,
     items: any,
 }>()

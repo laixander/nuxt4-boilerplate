@@ -4,6 +4,7 @@
         <div class="relative hidden lg:flex flex-col min-h-svh shrink-0 border-r border-default bg-elevated/25" :class="collapsed ? 'min-w-16 w-auto' : 'min-w-60'">
             <Sidebar
                 :collapsed="collapsed"
+                :app="appName"
                 :items="links"
             />
         </div>
@@ -14,6 +15,7 @@
                 :collapsed="collapsed"
                 :items="links"
                 :title="pageTitle"
+                :app="appName"
                 @toggleSidebar="toggleSidebar"
             />
             <div class="flex flex-col gap-4 sm:gap-6 flex-1 overflow-y-auto p-4 sm:p-6">
@@ -31,6 +33,7 @@ import Header from '~/components/Core/Header.vue'
 import Sidebar from '~/components/Core/Sidebar.vue'
 
 const pageTitle = ref('Home')
+const appName = ref('Application Name')
 
 const links = [
     [
@@ -112,7 +115,7 @@ const links = [
     [
         {
             label: 'Feedback',
-            icon: 'i-lucide-message-circle',
+            icon: 'i-lucide-message-square',
             target: '_blank'
         },
         {
