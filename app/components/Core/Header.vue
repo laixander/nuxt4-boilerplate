@@ -16,7 +16,6 @@
                 <template #content>
                     <Sidebar 
                         :collapsed="collapsed" 
-                        :app="app"
                         :items="items"
                         @close="open = false" 
                     />
@@ -48,7 +47,6 @@ import Sidebar from '~/components/Core/Sidebar.vue'
 defineProps<{
     collapsed: boolean
     title: string
-    app: string
     items: any
 }>()
 

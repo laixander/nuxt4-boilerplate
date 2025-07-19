@@ -13,7 +13,7 @@
                 src: 'img/logo.png',
                 size: 'md'
             }"
-            :label="collapsed ? undefined : app"
+            :label="collapsed ? undefined : 'Application Name'"
             color="neutral"
             variant="ghost"
             :class="collapsed ? '' : 'w-full'"
@@ -63,7 +63,6 @@
 <script setup lang="ts">
 import UserMenu from '~/components/Core/UserMenu.vue'
 defineProps<{
-    app: string
     collapsed: boolean,
     items: any,
 }>()
