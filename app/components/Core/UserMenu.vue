@@ -1,9 +1,8 @@
 <script setup lang="ts">
 import type { DropdownMenuItem } from '@nuxt/ui'
+import type { UserMenuProps } from '~/types'
 
-defineProps<{
-    collapsed: boolean
-}>()
+defineProps<UserMenuProps>()
 
 const colorMode = useColorMode()
 const appConfig = useAppConfig()

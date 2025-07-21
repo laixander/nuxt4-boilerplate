@@ -20,8 +20,6 @@
 </template>
 
 <script setup lang="ts">
-defineProps<{
-    title?: string
-    description?: string
-}>()
+import type { PageProps } from '~/types'
+defineProps<PageProps>()
 </script>

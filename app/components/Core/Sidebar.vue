@@ -62,9 +62,9 @@
 
 <script setup lang="ts">
 import UserMenu from '~/components/Core/UserMenu.vue'
-defineProps<{
-    collapsed: boolean,
-    items: any,
-}>()
+import type { SidebarProps } from '~/types'
+
+defineProps<SidebarProps>()
+
 defineEmits(['close'])
 </script>

@@ -43,12 +43,9 @@
 
 <script setup lang="ts">
 import Sidebar from '~/components/Core/Sidebar.vue'
+import type { HeaderProps } from '~/types'
 
-defineProps<{
-    collapsed: boolean
-    title: string
-    items: any
-}>()
+defineProps<HeaderProps>()
 
 defineEmits(['toggleSidebar'])
 
