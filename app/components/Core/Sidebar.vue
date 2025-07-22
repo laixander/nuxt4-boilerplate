@@ -61,7 +61,7 @@
 </template>
 
 <script setup lang="ts">
-import UserMenu from '~/components/Core/UserMenu.vue'
+import UserMenu from '~/components/core/UserMenu.vue'
 import type { SidebarProps } from '~/types'
 
 defineProps<SidebarProps>()

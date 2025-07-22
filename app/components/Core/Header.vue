@@ -42,7 +42,7 @@
 </template>
 
 <script setup lang="ts">
-import Sidebar from '~/components/Core/Sidebar.vue'
+import Sidebar from '~/components/core/Sidebar.vue'
 import type { HeaderProps } from '~/types'
 
 defineProps<HeaderProps>()

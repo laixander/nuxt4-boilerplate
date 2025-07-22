@@ -24,8 +24,8 @@
 </template>
 
 <script setup lang="ts">
-import Main from '~/components/Core/Main.vue'
-import BarChart from '~/components/Unovis/BarChart.vue'
-import LineChart from '~/components/Unovis/LineChart.vue'
-import Page from '~/components/Core/Page.vue'
+import Main from '~/components/core/Main.vue'
+import BarChart from '~/components/unovis/BarChart.vue'
+import LineChart from '~/components/unovis/LineChart.vue'
+import Page from '~/components/core/Page.vue'
 </script>
