@@ -38,24 +38,6 @@
         />
     </div>
     <div class="shrink-0 flex items-center gap-1.5 px-4 py-2 lg:border-t lg:border-default">
-        <!-- <UDropdownMenu
-            :items="userItems"
-            :content="{ sideOffset: 16 }"
-            :ui="{ content: 'w-56' }"
-        >
-            <UButton
-                :avatar="{ src: 'https://i.pravatar.cc/40' }"
-                :label="collapsed ? undefined : 'Jane Copper'"
-                :trailing-icon="collapsed ? undefined : 'i-lucide-chevrons-up-down'"
-                color="neutral"
-                variant="ghost"
-                :class="collapsed ? '' : 'w-full'"
-                :ui="collapsed ? undefined : { label: 'mr-auto', trailingIcon: 'text-dimmed' }"
-            />
-            <template v-for="(_, name) in $slots" #[name]>
-                <slot :name="name" />
-            </template>
-        </UDropdownMenu> -->
         <UserMenu :collapsed="collapsed" />
     </div>
 </template>

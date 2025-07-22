@@ -23,8 +23,8 @@
 
 <script setup lang="ts">
 import type { NavigationMenuItem } from '@nuxt/ui'
-import Header from '~/components/Core/Header.vue'
-import Sidebar from '~/components/Core/Sidebar.vue'
+import Header from '~/components/core/Header.vue'
+import Sidebar from '~/components/core/Sidebar.vue'
 
 const pageTitle = ref('Home')
 
