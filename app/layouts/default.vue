@@ -103,6 +103,11 @@ const links = [
                     icon: 'i-lucide-file-text'
                 }
             ]
+        },
+        {
+            label: 'Sample',
+            icon: 'i-lucide-pencil-ruler',
+            to: '/sample'
         }
     ],
     [
